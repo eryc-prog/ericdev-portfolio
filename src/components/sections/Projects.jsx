@@ -20,7 +20,7 @@ export const Projects = () => {
                 ready for future
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Node.js", "AWS", "Express.js"].map((tech, key) => (
+                {["Vanilla Javascript"].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
@@ -37,119 +37,165 @@ export const Projects = () => {
                   className="text-blue-400 hover:text-blue-200 transition-colors my-4"
                 >
                   View Project →
+                </a>
+                <a
+                  href="https://github.com/eryc-prog/p2-js-api-app"
+                  target="_blank"
+                  className="text-blue-400 hover:text-blue-200 transition-colors my-4"
+                >
+                  Github →
                 </a>
               </div>
             </div>
 
             {/* Project 2 */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2"> AI Powered Flashcard </h3>
+              <h3 className="text-xl font-bold mb-2">
+                {" "}
+                Waterworks Management System{" "}
+              </h3>
               <p className="text-gray-400 mb-4">
-                Tool that can help everyone to refresh their study and be always
-                ready for future
+                A management system that can help an organization to manage
+                their data easily and efficiently.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Node.js", "AWS", "Express.js"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                {["React", "Node.js", "Express.js", "MongoDb"].map(
+                  (tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
               </div>
 
               <div className="flex justify-between items-center">
                 <a
-                  href="https://ai-powered-flashcard.netlify.app/"
+                  href="https://waterworks-mgm-sys.netlify.app/"
                   target="_blank"
                   className="text-blue-400 hover:text-blue-200 transition-colors my-4"
                 >
                   View Project →
+                </a>
+                <a
+                  href="https://github.com/eryc-prog/p3-react-act-wws"
+                  target="_blank"
+                  className="text-blue-400 hover:text-blue-200 transition-colors my-4"
+                >
+                  Github →
                 </a>
               </div>
             </div>
             {/* Project 3 */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2"> AI Powered Flashcard </h3>
+              <h3 className="text-xl font-bold mb-2"> Wedly </h3>
               <p className="text-gray-400 mb-4">
-                Tool that can help everyone to refresh their study and be always
-                ready for future
+                Wedding planning app that helps users manage their wedding
+                details, guest lists, and budgets.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Node.js", "AWS", "Express.js"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                {["React", "Node.js", "Express.js", "MongoDb"].map(
+                  (tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
               </div>
 
               <div className="flex justify-between items-center">
                 <a
-                  href="https://ai-powered-flashcard.netlify.app/"
+                  href="https://wedlyapp.onrender.com/"
                   target="_blank"
                   className="text-blue-400 hover:text-blue-200 transition-colors my-4"
                 >
                   View Project →
+                </a>
+                <a
+                  href="https://github.com/youichiuehara14/WedlyApp"
+                  target="_blank"
+                  className="text-blue-400 hover:text-blue-200 transition-colors my-4"
+                >
+                  Github →
                 </a>
               </div>
             </div>
             {/* Project 4 */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2"> AI Powered Flashcard </h3>
+              <h3 className="text-xl font-bold mb-2"> My Todo App </h3>
               <p className="text-gray-400 mb-4">
-                Tool that can help everyone to refresh their study and be always
-                ready for future
+                A simple todo application that allows users to manage their
+                tasks efficiently.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Node.js", "AWS", "Express.js"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                {["React", "Node.js", "Express.js", "MongoDb"].map(
+                  (tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
               </div>
 
               <div className="flex justify-between items-center">
                 <a
-                  href="https://ai-powered-flashcard.netlify.app/"
+                  href="https://todo-app-client-d7mo.onrender.com"
                   target="_blank"
                   className="text-blue-400 hover:text-blue-200 transition-colors my-4"
                 >
                   View Project →
                 </a>
+                <a
+                  href="https://github.com/eryc-prog/fullstack-todoapp"
+                  target="_blank"
+                  className="text-blue-400 hover:text-blue-200 transition-colors my-4"
+                >
+                  Github →
+                </a>
               </div>
             </div>
             {/* Project 5 */}
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2"> AI Powered Flashcard </h3>
+              <h3 className="text-xl font-bold mb-2"> Pokedex App </h3>
               <p className="text-gray-400 mb-4">
-                Tool that can help everyone to refresh their study and be always
-                ready for future
+                A fullstack application that allows users to view and search for
+                Pokémon data.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "Node.js", "AWS", "Express.js"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                {["React", "Node.js", "Express.js", "MongoDb"].map(
+                  (tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
               </div>
 
               <div className="flex justify-between items-center">
                 <a
-                  href="https://ai-powered-flashcard.netlify.app/"
+                  href="https://client-pokedex.onrender.com"
                   target="_blank"
                   className="text-blue-400 hover:text-blue-200 transition-colors my-4"
                 >
                   View Project →
+                </a>
+                <a
+                  href="https://github.com/eryc-prog/fullstack-pokedex"
+                  target="_blank"
+                  className="text-blue-400 hover:text-blue-200 transition-colors my-4"
+                >
+                  Github →
                 </a>
               </div>
             </div>

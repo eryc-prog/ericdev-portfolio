@@ -1,21 +1,8 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = [
-    "React",
-    "TailwindCSS",
-    "Bootstrap",
-    "TypeScript",
-    "JavaScript",
-  ];
-  const backendSkills = [
-    "AWS",
-    "Node.js",
-    "MongoDB",
-    "MySQL",
-    "GraphQL",
-    "Python",
-  ];
+  const frontendSkills = ["HTML", "CSS", "JavaScript", "React"];
+  const backendSkills = ["Node.js", "Express.js", "MongoDB"];
 
   return (
     <section
@@ -67,42 +54,81 @@ export const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            {/* Education Section */}
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 📝Education </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong> B.S in Information Technology </strong> - Batangas
-                  State University (2019-2023)
-                </li>
-                <li>
-                  Relevant Coursework: Web Development, Algorithm, Data
-                  Management, Network Technology
-                </li>
-              </ul>
+              <h3 className="text-xl font-bold mb-4"> 📝 Education </h3>
+              <div className="space-y-4 text-gray-300">
+                <div>
+                  <h4 className="font-semibold mb-6">
+                    B.S in Information Technology - <br />
+                    Batangas State University (2019-2023)
+                  </h4>
+
+                  <h5 className="font-semibold"> Relevant Coursework </h5>
+                  <ul className="list-disc list-inside text-gray-300 space-y-2 mt-2">
+                    <li>Web Development</li>
+                    <li>Algorithm</li>
+                    <li>Data Management</li>
+                    <li>Network Technology</li>
+                    <li>Internship</li>
+                    <li>Capstone</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
+            {/* Certification */}
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼Work Experience </h3>
+              <h3 className="text-xl font-bold mb-4"> 💼 Certification </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">
-                    Information Technology Associate - Furukawa Automotive
-                    System
+                    Fullstack Web Development - <br />
+                    Uplift Code Camp
                   </h4>
-                  <p>
+                  <ul className="list-disc list-inside text-gray-300 space-y-2 mt-2">
+                    <li>
+                      Intensive program focused on HTML, CSS, JavaScript, React,
+                      node.js, REST API, and MongoDB.
+                    </li>
+                    <li>
+                      Develop projects, Hands-on activities and learn best
+                      practices.
+                    </li>
+                    <li>Learn to work as a team, and develop leadership</li>
+                    <li>
+                      Helpful workshops for self and professional development
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Work Experience Section */}
+          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all mt-8">
+            <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+            <div className="space-y-4 text-gray-300">
+              <div>
+                <h4 className="font-semibold">
+                  Information Technology Associate - Furukawa Automotive System
+                </h4>
+                <ul className="list-disc list-inside text-gray-300 space-y-2 mt-2">
+                  <li>
                     Resolved hardware and software issues for a design-focused
                     department, ensuring minimal downtime and increased
                     productivity by 90%.
-                  </p>
-                  <p>
+                  </li>
+                  <li>
                     Assisted production teams by troubleshooting technical
                     problems, ensuring seamless daily operations.
-                  </p>
-                  <p>
+                  </li>
+                  <li>
                     Diagnosed and corrected complex design errors in ICAD
                     system; collaborated with Vietnamese and Japanese teams to
                     resolve escalated issues.
-                  </p>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
