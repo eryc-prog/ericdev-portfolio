@@ -27,39 +27,39 @@ export const Contact = () => {
       .catch(() => alert("Oops! Something went wrong. Please try again."));
   };
   return (
-    <section
-      id="contact"
-      className="min-h-screen flex items-center justify-center py-20"
-    >
+    <section id="contact" className="min-h-screen py-20 bg-black">
       <RevealOnScroll>
-        <div className="w-full max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto py-8 px-2 sm:px-4">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Get in Touch
           </h2>
-          <form className="space-y-6" onSubmit={handleSubmit}>
-            <div className="relative">
+
+          <form
+            className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6"
+            onSubmit={handleSubmit}
+          >
+            {/* Left column */}
+            <div className="space-y-6">
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
                 value={formData.name}
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Name"
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
                 }
               />
-            </div>
 
-            <div className="relative">
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
                 value={formData.email}
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="example@gmail.com"
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
@@ -67,14 +67,15 @@ export const Contact = () => {
               />
             </div>
 
-            <div className="relative">
+            {/* Right column */}
+            <div className="space-y-6">
               <textarea
                 id="message"
                 name="message"
                 required
-                rows={5}
+                rows={7}
                 value={formData.message}
-                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Your Message"
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
